@@ -18,7 +18,7 @@ class PostController extends Controller
             ['id' => '2', 'title' => 'Post 2', 'body' => 'Post body 2'],
             ['id' => '3', 'title' => 'Post 3', 'body' => 'Post body 3'],
             ['id' => '4', 'title' => 'Post 4', 'body' => 'Post body 4'],
-            ['id' => '5', 'title' => 'Post 5', 'body' => 'Post body 5'],
+            ['id' => '5', 'title' => 'Post 5', 'body' => 'Post body 5']
         ];
 
         return view('index', compact('posts'));
