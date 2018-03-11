@@ -1,0 +1,3 @@
+DB::
+first() -> return objek
+get() -> return array
