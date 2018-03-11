@@ -30,3 +30,15 @@ Route::get('/blog', 'PostController@index');
 // }]);
 
 Route::resource('post', 'PostController');
+
+Route::get('/insert', function() {
+	// DB::insert('insert into posts(title, body, user_id) values (?, ?, ?)', ['Belajar PHP denga laravel', 'Laraverl is awseome!', '1']);
+    $data = [
+        'title' => 'Disini di isi title',
+        'body' => 'Disini di isi body',
+        'user_id' => '2'
+    ];
+
+    DB::table('posts')->insert($data);
+    echo "data berhasil dibuat!";
+});
